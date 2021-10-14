@@ -1,0 +1,714 @@
+@import url(https://fonts.googleapis.com/css?family=Spartan:100,200,300,regular,500,600,700,800,900);
+@font-face {
+    font-family: KGDefyingGravity;
+    src: url(Fonts/KGDefyingGravity.ttf);
+}
+
+
+/* Nollställer marginaler och padding */
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.customize-support {
+    max-width: 1920px;
+}
+
+
+/* Header och navigering-menyns styling. */
+
+header {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+header img {
+    margin: auto;
+    margin-top: 4%;
+}
+
+nav {
+    font-family: KGDefyingGravity;
+    margin: auto;
+    text-decoration: none;
+    background-color: #042012;
+    margin-top: 8%;
+    width: 80%;
+    height: 20px;
+    padding-bottom: 3%;
+    padding-top: 2%;
+    font-size: 3rem;
+}
+
+nav a {
+    color: #F28D1B;
+    margin-left: 10%;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+}
+
+nav a:hover {
+    color: #ACC49C;
+}
+
+
+/* Hamburgermeny */
+
+
+/* Style the navigation menu */
+
+.topnav {
+    overflow: hidden;
+    background-color: transparent;
+    position: relative;
+}
+
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+
+.topnav #myLinks {
+    display: none;
+}
+
+
+/* Style navigation menu links */
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+
+/* Style the hamburger menu */
+
+.topnav a.icon {
+    background: black;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+/* Add a grey background color on mouse-over */
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* Style the active link (or home/logo) */
+
+.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+
+/* Rubrikers styling */
+
+.nyhetercontainer h2,
+.nyhet1container h2,
+.nyhet2container h2 {
+    font-family: KGDefyingGravity;
+    color: #F28D1B;
+    font-size: 7rem;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.nyhet h3,
+.nyhet1container h3,
+.nyhet2container h3 {
+    text-decoration: black underline;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.senaste h1 {
+    padding-top: 10%;
+    border-bottom: 3px solid #F28D1B;
+}
+
+article h2 {
+    font-size: 20px;
+    text-decoration: black underline;
+    margin-bottom: 1%;
+}
+
+.omosscontainer h2,
+.spalt h2 {
+    font-weight: 300;
+    font-size: 23px;
+    margin-top: 1%;
+}
+
+.omosscontainer h3,
+.spalt h3 {
+    color: #F28D1B;
+    font-weight: 400;
+    margin-top: 2%;
+}
+
+.text h2 {
+    font-weight: 300;
+    font-size: 30px;
+    text-decoration: underline #F28D1B;
+}
+
+
+/*  De olika containernas styling */
+
+.indexcontainer {
+    display: flex;
+    width: 95%;
+}
+
+#primary-sidebar {
+    font-family: 'Spartan';
+    border: 2px #F28D1B solid;
+    padding: 0.5%;
+    width: 22%;
+    margin: auto;
+    background-color: #F28D1B;
+}
+
+#primary-sidebar p {
+    color: black;
+    font-weight: 600;
+}
+
+.nyhetercontainer {
+    width: 85%;
+    margin: auto;
+}
+
+.nyhet1container,
+.nyhet {
+    margin-bottom: 3%;
+}
+
+.nyhet1container p {
+    width: 100%;
+}
+
+.nyhet {
+    display: block;
+    margin-top: 3%;
+    font-family: 'Spartan';
+    word-wrap: break-word;
+}
+
+.ny1 {
+    width: 40%;
+    background-color: #65b32e5e;
+    margin: auto;
+    padding: 2%;
+    line-height: 1.6rem;
+    border-radius: 2%;
+    margin-top: 1%;
+    padding-bottom: 5%;
+}
+
+.nyhet1container {
+    font-family: 'Spartan';
+}
+
+.senaste {
+    margin-left: 17%;
+    width: 60%;
+    font-family: 'Spartan';
+}
+
+article {
+    background-color: #65b32e5e;
+    margin-top: 2%;
+    border: black 1px solid;
+    padding: 3%;
+    padding-bottom: 8%;
+}
+
+article p {
+    max-width: 500px;
+    word-break: break-all;
+}
+
+.omosscontainer {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    font-family: 'Spartan';
+    margin-right: 2%;
+    margin-left: 10%;
+}
+
+.spalt {
+    display: block;
+    margin: auto;
+}
+
+.enspalt {
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-family: 'Spartan';
+    margin-right: 2%;
+    margin-left: 30%;
+    width: 50%;
+}
+
+.enspalt p {
+    width: 60%;
+    word-break: break-all;
+    margin: auto;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    padding-bottom: 2%;
+    border-bottom: 3px solid #F28D1B;
+    text-align: left;
+}
+
+.spalt img {
+    width: 40%;
+    height: fit-content;
+    border-radius: 10%;
+}
+
+.omosscontainer img {
+    width: 40%;
+    display: block;
+    margin: auto;
+    border-radius: 10%;
+    height: auto;
+}
+
+.omoss p {
+    width: 70%;
+    text-align: left;
+    margin: auto;
+    margin-top: 2%;
+    padding: 2%;
+    word-break: break-all;
+    margin-bottom: 3%;
+}
+
+.kontaktcontainer {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.text {
+    width: 50%;
+    margin-left: 10%;
+    font-family: 'Spartan';
+    margin-bottom: 2%;
+}
+
+.text p {
+    width: 80%;
+    margin-top: 3%;
+    line-height: 1.7rem;
+}
+
+.form {
+    width: 90%;
+    margin-bottom: 2%;
+    padding: 0.5%;
+}
+
+.form label {
+    font-family: 'Spartan';
+    margin-bottom: 2%;
+    color: #F28D1B;
+}
+
+.form textarea {
+    width: 100%;
+}
+
+#submit {
+    background-color: #F28D1B;
+    font-size: 20px;
+    margin: unset;
+    padding: unset;
+}
+
+#submit:hover {
+    background-color: #4EA515;
+}
+
+.enskild {
+    width: 40%;
+    background-color: #65b32e5e;
+    margin: auto;
+    padding: 3%;
+    line-height: 1.6rem;
+    border-radius: 2%;
+    padding-bottom: 4%;
+}
+
+.bild img {
+    width: 100%;
+    height: fit-content;
+    display: block;
+    margin: auto;
+    margin-left: 10%;
+}
+
+.bild {
+    border-right: 3px solid #F28D1B;
+    border-bottom: 3px solid #F28D1B;
+    padding-top: 5%;
+    padding-right: 7%;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+}
+
+.enskild img {
+    float: left;
+    padding-right: 3%;
+}
+
+footer {
+    background-color: #042012;
+    display: flex;
+    padding: 1%;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+}
+
+.kontakt {
+    color: #F28D1B;
+    font-family: 'Spartan';
+    width: 50%;
+    margin: auto;
+    padding-left: 2%;
+    margin-left: 1%;
+}
+
+.kontakt img {
+    vertical-align: middle;
+    width: 5%;
+    margin-left: 1.5%;
+}
+
+.social img {
+    width: 8%;
+    margin-right: 3%;
+}
+
+.social {
+    width: 40%;
+    text-align: center;
+    margin: auto
+}
+
+
+/* Länkar */
+
+.ny1 a,
+.enskild a {
+    background-color: #F28D1B;
+    border: black solid 1px;
+    border-radius: 10%;
+    padding: 1.5%;
+    font-size: 15px;
+    color: black;
+    float: right;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#tillbaka {
+    background-color: #F28D1B;
+    border: black solid 1px;
+    padding: 1%;
+    font-size: 15px;
+    color: black;
+    float: left;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1%;
+}
+
+article a {
+    background-color: #F28D1B;
+    border: black solid 1px;
+    padding: 1%;
+    font-size: 15px;
+    color: black;
+    float: right;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+article a:hover {
+    background-color: #4EA515;
+}
+
+
+/* Ändrar menyns fontstorlekar efter skärm så den ska fungera på alla skärmar */
+
+@media screen and (max-width:1270px) {
+    nav {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    nav {
+        font-size: 2.1rem;
+    }
+    .indexcontainer {
+        width: 90%;
+        margin-bottom: 2%;
+    }
+    .article p {
+        width: 100%;
+        font-size: 15px;
+    }
+    article h2 {
+        font-size: 16px;
+    }
+    .bild {
+        padding-right: 2%;
+        padding-bottom: 2%;
+        margin-bottom: 2%;
+    }
+}
+
+
+/* Fler ändringar för mindre skärmar */
+
+@media screen and (max-width:900px) {
+    nav {
+        display: none;
+    }
+    .topnav {
+        overflow: unset;
+        background-color: transparent;
+        position: relative;
+        width: 100%;
+    }
+    .topnav #myLinks {
+        display: none;
+    }
+    .topnav a {
+        color: black;
+        padding: 10px 10px;
+        text-decoration: none;
+        font-size: 25px;
+        display: block;
+        margin: auto;
+        width: 90%;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Spartan';
+    }
+    .topnav a.icon {
+        background: #042012df;
+        display: block;
+        position: unset;
+        top: 0;
+        color: #F28D1B;
+        width: 90%;
+        margin: auto;
+    }
+    .topnav a.icon::after {
+        content: "MENY";
+        font-weight: bold;
+        font-size: 22px;
+    }
+    .topnav a:hover {
+        background-color: #65b32e5e;
+        color: black;
+    }
+    .active {
+        background-color: #BBADB5;
+        color: black;
+    }
+    nav li {
+        display: block;
+        text-align: right;
+        padding-top: 2%;
+        margin-right: 2%;
+    }
+    nav {
+        font-family: KGDefyingGravity;
+        margin-top: 3%;
+        font-size: 2rem;
+        text-align: right;
+        height: 140px;
+        width: 100%;
+        background-color: #042012ed;
+        padding-bottom: 6%;
+        text-align: right;
+    }
+    header img {
+        display: none;
+    }
+    .topnav::before {
+        content: url(Mobilbild/mobillogga.png);
+        float: left;
+    }
+    .indexcontainer {
+        display: block;
+        width: 100%;
+    }
+    .senaste {
+        width: 85%;
+        margin: auto;
+        border-right: 3px solid #F28D1B;
+        border-bottom: 3px solid #F28D1B;
+        padding: 2%;
+        font-size: 15px;
+        margin-top: 2%;
+    }
+    .senaste h1 {
+        border-bottom: unset;
+        text-decoration: underline black;
+    }
+    .bild {
+        border-right: unset;
+        border-bottom: unset;
+    }
+    .bild img {
+        display: block;
+        margin: auto;
+        margin-right: 3%;
+    }
+    footer {
+        background-color: #042012;
+        display: block;
+    }
+    .kontakt {
+        width: 70%;
+        margin: unset;
+        display: block;
+        margin-bottom: 2%;
+        margin-top: 1%;
+    }
+    .kontakt img {
+        margin-left: 1%;
+    }
+    .social {
+        width: 100%;
+        text-align: right;
+    }
+    .nyhetercontainer h2 {
+        font-size: 50px;
+        margin-top: 2%;
+    }
+    .nyhet {
+        width: 100%;
+        display: block;
+    }
+    .ny1 {
+        width: 100%;
+        margin-top: 2%;
+        padding-bottom: 5%;
+    }
+    .ny1 p {
+        padding: 5%
+    }
+    .omosscontainer {
+        display: block;
+    }
+    .omosscontainer img {
+        margin-top: 4%;
+    }
+    .margitsvensson {
+        border-right: 3px solid #F28D1B;
+        border-bottom: 3px solid #F28D1B;
+        width: 95%;
+    }
+    .margitsvensson h2,
+    .leifwerner h2,
+    .pernillablom h2 {
+        font-size: 20px;
+    }
+    .margitsvensson h3,
+    .leifwerner h3,
+    .pernillablom h3 {
+        font-size: 18px;
+    }
+    .margitsvensson p,
+    .pernillablom p,
+    .leifwerner p {
+        width: 90%;
+        font-size: 15px;
+    }
+    .leifwerner {
+        border: unset;
+    }
+    .pernillablom {
+        border-bottom: unset;
+        border-top: 3px solid #F28D1B;
+    }
+    .kontaktcontainer {
+        display: block;
+    }
+    .text {
+        width: 90%;
+        padding: 1%;
+        margin-top: 1%;
+        margin-left: 0%;
+        padding-right: 20%;
+    }
+    .text h2 {
+        font-size: 25px;
+        margin-top: 15%;
+    }
+    .text p {
+        width: 100%;
+        font-size: 15px;
+    }
+    .form {
+        width: 90%;
+        padding-left: 1%;
+        margin: unset;
+    }
+    .form h2 {
+        margin-top: 10%;
+    }
+    .enskild {
+        width: 90%;
+    }
+    .enskild p {
+        margin-bottom: 6%;
+        margin-top: 5%;
+        font-size: 15px;
+    }
+    .nyhet1container h2 {
+        font-size: 60px;
+        margin-top: 3%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .form h2 {
+        font-size: 40px;
+        width: 100%;
+    }
+    .text h2 {
+        font-size: 20px;
+    }
+    #ny2 {
+        margin-top: 5%;
+    }
+}
